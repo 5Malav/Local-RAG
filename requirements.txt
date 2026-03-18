@@ -1,0 +1,9 @@
+torch>=2.1.0
+transformers>=4.33.0
+sentence-transformers>=2.2.2
+faiss-cpu>=1.7.4
+chromadb>=0.4.9
+PyPDF2>=3.0.0
+python-docx>=0.8.12
+gradio>=3.38.0
+tqdm>=4.65.0
