@@ -1,7 +1,7 @@
+
+data/
+embeddings/*.pkl
+vector_store/
+venv/
 __pycache__/
 *.pyc
-venv/
-data/
-embeddings/
-vector_store/
-.env
