@@ -1,15 +1,20 @@
-import os
-import pickle
+import sys
 from pathlib import Path
+import pickle
 from tqdm import tqdm
-from sentence-transformers import SentenceTransformer
-from ingestion_pipeline.loader import ingest_documents  # import your ingestion function
+from sentence_transformers import SentenceTransformer
 
+# Add project root to Python path
+PROJECT_ROOT = Path("/Users/malavjoshi/Desktop/RAG_Projects/local_rag")
+sys.path.append(str(PROJECT_ROOT))
+
+# Import your ingestion function
+from ingestion_pipeline.ingestion import ingest_documents
 # ---------------------------
 # CONFIGURATION
 # ---------------------------
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"  # SentenceTransformers model
-EMBEDDINGS_FOLDER = Path("../embeddings")
+EMBEDDINGS_FOLDER = Path("/Users/malavjoshi/Desktop/RAG_Projects/local_rag/embeddings")
 EMBEDDINGS_FOLDER.mkdir(exist_ok=True)  # create folder if not exists
 
 # ---------------------------
