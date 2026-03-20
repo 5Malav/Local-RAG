@@ -5,3 +5,6 @@ vector_store/
 venv/
 __pycache__/
 *.pyc
+
+vector_store/faiss_index.index
+vector_store/metadata.pkl
