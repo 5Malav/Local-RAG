@@ -11,7 +11,7 @@ class Retriever:
 
     def __init__(self, index_path: str, metadata_path: str, model_name: str = "all-MiniLM-L6-v2"):
         # Load FAISS index
-        self.index = faiss.read_index(index_path)
+        self.index = faiss.read_index(str(index_path))
 
         # Load metadata
         with open(metadata_path, "rb") as f:
