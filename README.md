@@ -38,9 +38,9 @@ A local **Retrieval-Augmented Generation (RAG)** tool to answer questions and su
 
 ```bash
 git clone https://github.com/<your-username>/local_rag.git
-cd local_rag`
+cd local_rag
 
-### 1. Environment Setup
+### 2. Environment Setup
 Create and activate a virtual environment to manage dependencies:
 
 ```bash
