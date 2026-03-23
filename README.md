@@ -21,3 +21,13 @@ A local **Retrieval-Augmented Generation (RAG)** tool to answer questions and su
 - `ui/` - CLI or GUI scripts
 - `scripts/` - helper scripts
 - `notebooks/` - experimentation
+
+## Tech Stack
+Python 3.10+
+SentenceTransformers for embeddings (all-MiniLM-L6-v2)
+FAISS for vector similarity search
+Mistral 7B Local LLM for answer generation
+Ollama (optional SDK for local LLM inference)
+ROUGE / BLEU for evaluation metrics
+Gradio (optional) for GUI interface
+Pickle for saving embeddings and metadata
