@@ -49,8 +49,18 @@ python -m venv venv
 source venv/bin/activate
 # Activate on Windows
 venv\Scripts\activate
-```bash
+```
+3. **install required packages:**
 
+```bash
+pip install -r requirements.txt
+```
+
+4. **Ensure your local LLM (Mistral 7B) is downloaded and accessible:**
+
+```bash
+local_rag/local_models/mistral-7b-instruct/
+```
 
 
 
