@@ -39,18 +39,18 @@ A local **Retrieval-Augmented Generation (RAG)** tool to answer questions and su
 ```bash
 git clone https://github.com/<your-username>/local_rag.git
 cd local_rag
+```
 
-### 2. Environment Setup
-Create and activate a virtual environment to manage dependencies:
+2. **Create a Python virtual environment**
 
 ```bash
-# Create environment
 python -m venv venv
-
-# Activate (macOS/Linux)
+# Activate on macOS/Linux
 source venv/bin/activate
+# Activate on Windows
+venv\Scripts\activate
+```bash
 
-# Activate (Windows)
-.\venv\Scripts\activate
+
 
 
