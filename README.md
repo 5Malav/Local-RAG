@@ -39,3 +39,21 @@ A local **Retrieval-Augmented Generation (RAG)** tool to answer questions and su
 ```bash
 git clone https://github.com/<your-username>/local_rag.git
 cd local_rag
+
+2. **Create a Python virtual environment**:
+
+```bash
+python -m venv venv
+source venv/bin/activate   # macOS/Linux
+venv\Scripts\activate      # Windows
+
+3. **Install required packages**:
+
+```bash
+pip install -r requirements.txt
+
+4. **Ensure your local LLM is downloaded and accessible**:
+
+```bash
+local_rag/local_models/mistral-7b-instruct/
+
