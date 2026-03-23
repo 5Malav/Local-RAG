@@ -61,6 +61,40 @@ pip install -r requirements.txt
 ```bash
 local_rag/local_models/mistral-7b-instruct/
 ```
+## Usage
 
+1. **Preprocess documents**
+ 
+```bash
+python ingestion_pipeline/loader.py
+python ingestion_pipeline/chunker.py
+```
+
+2. **Generate embeddings**
+
+```bash
+python embeddings/embed.py
+```
+
+3. **Build vector store**
+
+```bash
+python vector_store/build_index.py
+```
+
+4. **Query the system**
+```bash
+python generation/generator.py
+```
+
+5. **Evaluate**
+
+```bash
+python evaluation/evaluate.py
+```
+
+## Evaluation Metrics:-
+- Retrieval Accuracy: Cosine similarity between query and retrieved chunks
+- Generation Quality: ROUGE-1, ROUGE-L, BLEU scores
 
 
