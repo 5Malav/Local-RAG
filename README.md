@@ -31,14 +31,15 @@ A local **Retrieval-Augmented Generation (RAG)** tool to answer questions and su
 - ROUGE / BLEU for evaluation metrics
 - Gradio (optional) for GUI interface
 - Pickle for saving embeddings and metadata
-- 
+  
 ## Installation
 
 1. **Clone the repository**:
 
 ```bash
 git clone https://github.com/<your-username>/local_rag.git
-cd local_rag```
+cd local_rag
+.
 
 2. **Create a Python virtual environment**:
 
