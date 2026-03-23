@@ -40,6 +40,14 @@ A local **Retrieval-Augmented Generation (RAG)** tool to answer questions and su
 git clone https://github.com/<your-username>/local_rag.git
 cd local_rag
 
+## Installation
+
+2. **Create a Python virtual environment**:
+
+```bash
+python -m venv venv
+source venv/bin/activate   # macOS/Linux
+venv\Scripts\activate      # Windows
 2. **Create a Python virtual environment:**
 
 python -m venv venv
