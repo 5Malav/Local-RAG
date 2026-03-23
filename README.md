@@ -40,27 +40,17 @@ A local **Retrieval-Augmented Generation (RAG)** tool to answer questions and su
 git clone https://github.com/<your-username>/local_rag.git
 cd local_rag`
 
-## Installation
-
-2. **Create a Python virtual environment**:
+### 1. Environment Setup
+Create and activate a virtual environment to manage dependencies:
 
 ```bash
+# Create environment
 python -m venv venv
-source venv/bin/activate   # macOS/Linux
-venv\Scripts\activate      # Windows
-2. **Create a Python virtual environment:**
 
-python -m venv venv
-source venv/bin/activate   # macOS/Linux
-venv\Scripts\activate      # Windows
+# Activate (macOS/Linux)
+source venv/bin/activate
 
-3. **Install required packages:**
-pip install -r requirements.txt
-
-4. **Ensure your local LLM is downloaded:**
-
-Make sure mistral-7b-instruct is inside:
-
-local_rag/local_models/mistral-7b-instruct/
+# Activate (Windows)
+.\venv\Scripts\activate
 
 
