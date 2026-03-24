@@ -86,6 +86,14 @@ python vector_store/build_index.py
 ```bash
 python generation/generator.py
 ```
+  **CLI:**
+```bash
+python ui/cli.py --question "What is reinforcement learning?" --top_k 5
+```
+**GUI (optional):**
+```bash
+python ui/gradio_ui.py
+```
 
 5. **Evaluate**
 
@@ -93,8 +101,40 @@ python generation/generator.py
 python evaluation/evaluate.py
 ```
 
+**Example Query**
+
+```bash
+query = "What is an Operating System?"
+generated_answer = generator.generate(query)
+print(generated_answer)
+```
+
+**Sample Output:**
+
+```bash
+An operating system (OS) is system software that acts as an interface between computer hardware and users. 
+It manages hardware resources and provides services for application programs. 
+Common examples include Linux, Windows, and macOS.
+```
+
 ## Evaluation Metrics:-
 - Retrieval Accuracy: Cosine similarity between query and retrieved chunks
 - Generation Quality: ROUGE-1, ROUGE-L, BLEU scores
 
+### Example Output:
 
+- [Retrieval] Average Cosine Similarity (Top-5): 0.3793
+- [Generation] Evaluation Metrics
+- ROUGE-1: 0.7563
+- ROUGE-L: 0.6891
+- BLEU: 0.2801
+
+## Performance Notes
+- Retrieval is very fast (~milliseconds)
+- Generation may take a few seconds depending on top_k and hardware
+- Adjust top_k for speed vs accuracy tradeoff
+
+## Troubleshooting
+- Ollama connection errors: Ensure Ollama daemon is running
+- UNEXPECTED warnings: Can be ignored unless exact architecture match is required
+- Missing Python modules: Run pip install -r requirements.txt
